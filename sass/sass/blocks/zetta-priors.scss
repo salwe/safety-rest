@@ -1,0 +1,27 @@
+.zetta-priors {
+	&__title {
+		color: $green;
+		font-size: 22px;
+		text-align: center;
+	}
+	&__list {
+		li {
+			margin-bottom: 20px;
+			list-style: none;
+			p {
+				display: block;
+				padding-left: 25px;
+				color: #333;
+				line-height: 18px;
+				margin: 0;
+			}
+			&::before {
+				content: '\25CF';
+				color: $green;
+				font-size: 26px;
+				float: left;
+				line-height: 18px;
+			}
+		}
+	}
+}

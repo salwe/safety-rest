@@ -1,0 +1,52 @@
+.mainpage {
+	&__full {
+		display: none;
+		ul {
+			margin-left: 0;
+		}
+		li {
+			list-style: none;
+			&::before {
+				content: '\25BA';
+				font-size: 12px;
+				margin-right: 3px;
+				color: $green;
+			}
+		}
+	}
+	&__comment {
+		border-left: solid 3px $green;
+		padding-left: 10px;
+		line-height: 20px;
+	}
+	&__subtitle {
+		font-size: 18px;
+		color: #333;
+		font-weight: bold;
+		margin-bottom: 0;
+	}
+	&__text-with-ico {
+		.mainpage__ico {
+			float: left;
+		}
+		p {
+			padding-left: 32px;
+			margin-bottom: 7px;
+		}
+	}
+	&__ico {
+		width: 27px;
+		height: 23px;
+		background: url('../images/redesign/main-icons.png') no-repeat;
+		&-world { background-position: 0 0; }
+		&-sheng { background-position: -27px 0; }
+		&-russ { background-position: -27px*2 0; }
+		&-bask { background-position: -27px*3 0; }
+		&-fast { background-position: -27px*4 0; }
+		&-spectre { background-position: 0 -23px; }
+		&-multi { background-position: -27px -23px; }
+		&-med { background-position: -27px*2 -23px; }
+		&-pay { background-position: -27px*3 -23px; }
+		&-call { background-position: -27px*4 -23px; }
+	}
+}

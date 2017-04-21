@@ -1,0 +1,10 @@
+- var items = [{title:"стоимость полиса с помощью калькулятора.",src:"calc",linkHref:"/orderonline.php",linkText:"Рассчитайте онлайн"},{title:"удобным для Вас способом.",src:"pay",linkHref:"/oplata-i-dostavka.php",linkText:"Оплатите полис"},{title:"Страховой полис придет Вам на электронную почту сразу после оплаты.",src:"mail",linkHref:"",linkText:""},{title:"Просто распечатайте и возьмите его с собой в поездку",src:"print",linkHref:"",linkText:""}];
+
+.row.how-to-buy
+	each item in items
+		.large-3.columns.b-img-center
+			img(src='/bitrix/templates/corp_services_blue/images/redesign/how-#{item.src}.svg')
+			if (item.linkHref)
+				p #[a(href="#{item.linkHref}") #{item.linkText}] #{item.title}
+			else
+				p #{item.title}

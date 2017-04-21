@@ -1,0 +1,15 @@
+.h-offers,
+.offers {
+	margin: 0;
+}
+.offers-item {
+	background: url('../images/redesign/peoples1.png') no-repeat;
+	height: 385px;
+	padding: 30px 40px;
+	&__title {
+		font-size: 40px;
+		color: #fff;
+		line-height: 45px;
+		margin: 40px 0 25px;
+	}
+}

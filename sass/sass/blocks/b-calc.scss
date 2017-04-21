@@ -1,0 +1,149 @@
+.calc {
+	input[type="text"] {
+		border: solid 1px #c4c4c4;
+		border-radius: 3px;
+		height: 34px;
+		width: 100%;
+	}
+	label {
+		font-size: 16px;
+		color: $gray3;
+	}
+	&__title {
+		font-size: 22px;
+		color: $green;
+		margin-bottom: 25px;
+	}
+	&__h-country-inp {
+		position: relative;
+		span {
+			content: " ";
+			display: block;
+			background: url('../images/redesign/earth.svg');
+			position: absolute;
+			width: 22px;
+			height: 21px;
+			left: 5px;
+			top: 7px;
+		}
+	}
+	&__country-inp {
+		padding-left: 35px;
+	}
+	&__h-duration-cb {
+		label {
+			font-size: 15px;
+		}
+	}
+	&__duration-add-ico {
+		display: inline-block;
+		width: 16px;
+		height: 16px;
+		color: #fff;
+		font-weight: bold;
+		background: $green;
+		border-radius: 50%;
+		text-align: center;
+		line-height: 16px;
+		margin-right: 5px;
+	}
+	&__duration-add-btn {
+		text-decoration: underline;
+		font-size: 15px;
+		&:hover {
+			text-decoration: none;
+			cursor: pointer;
+		}
+	}
+	&__h-promo {
+		margin-top: 5px;
+	}
+	&__promo-btn {
+		text-decoration: underline;
+		&:hover {
+			text-decoration: none;
+			cursor: pointer;
+		}
+	}
+	&__promo-ico {
+		@extend .align_middle;
+		position: relative;
+		background: url('../images/redesign/help.svg') no-repeat;
+		width: 19px;
+		height: 16px;
+		margin-left: 7px;
+		&:hover {
+			.calc__promo-desc {
+				display: block;
+			}
+		}
+	}
+	&__promo-desc {
+		display: none;
+		position: absolute;
+		top: 20px;
+		right: 0;
+		color: #fff;
+
+		background: rgba(25, 25, 25, 0.922);
+		border: 1px solid rgba(255, 255, 255, 0.251);
+		border-radius: 3px;
+		box-shadow: 0px 0px 3px #555555;
+		font-size: 11px;
+		line-height: 16px;
+		padding: 4px 8px;
+		width: 250px;
+	}
+	&__submit-btn {
+		@extend .btn;
+		@extend .btn_color_green;
+		width: 100%;
+		border: solid 1px #d7d7d7;
+		line-height: 32px;
+		&:hover {
+			cursor: pointer;
+		}
+	}
+	&__partners img {
+		margin-right: 10px;
+	}
+}
+
+
+
+
+.calc-wrapper {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	.row {
+		position: relative;
+		width: 100%;
+		height: 100%;
+	}
+}
+#calculator {
+	width: 370px;
+	height: 440px;
+	background: #fff;
+	position: absolute;
+	z-index: 5;
+	right: 0;
+	top: 0;
+}
+
+// -----------
+
+.input-wrap {
+	position: relative;
+}
+.arrow-for-input {
+	top: 5px;
+	right: 0px;
+	border: none;
+}
+#overlay {
+	z-index: 4;
+}

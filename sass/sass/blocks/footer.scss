@@ -1,0 +1,110 @@
+/* Footer */
+.footer {
+	padding: 25px 0 10px;
+	background: url('../images/redesign/footer-bg.png') no-repeat;
+	background-size: cover;
+	@include box-shadow(0 -5px 5px -5px rgba(0,0,0,0.2));
+	ul, p { margin: 0; }
+	ul {
+		list-style: none;
+		li {
+			margin-bottom: 3px;
+			line-height: 20px;
+		}
+		a {
+			color: $gray3;
+			font-size: 15px;
+			text-decoration: underline;
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+	.contacts {
+		.title {
+			color: $gray3;
+			font-size: 20px;
+			font-weight: 500;
+			line-height: 20px;
+			margin-bottom: 10px;
+		}
+		a {
+			color: $green;
+			display: block;
+			font-weight: 500;
+			margin-bottom: 10px;
+			&.phone {
+				font-size: 25px;
+				text-decoration: none;
+				line-height: 28px;
+				&:hover {
+					color: $gray3;
+				}
+			}
+			&.mail {
+				font-size: 20px;
+				text-decoration: underline;
+				&:hover {
+					color: $gray3;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+	.btns {
+		.btn {
+			margin-bottom: 10px;
+			&:hover {
+				@extend .btn_color_green;
+			}
+		}
+	}
+}
+.payment {
+	background: #595959;
+	padding: 13px 0;
+	&__row {
+		text-align: justify;
+	}
+	p {
+		font-size: 20px;
+		color: #fff;
+		margin: 0;
+		@extend .align_middle;
+	}
+	&__item {
+		width: 62px;
+		height: 40px;
+		@extend .align_middle;
+		border-radius: 3px;
+		background: #fff url('../images/redesign/footer-payment.png');
+		&-visa { background-position: 0 0; }
+		&-mc { background-position: -62px 0; }
+		&-qiwi { background-position: -62px*2 0; }
+		&-ya { background-position: -62px*3 0; }
+		&-wm { background-position: 0 -40px; }
+		&-euro { background-position: -62px -40px; }
+		&-svyaz { background-position: -62px*2 -40px; }
+		&-mf { background-position: -62px*3 -40px; }
+		&-mts { background-position: 0 -40px*2; }
+		&-bline { background-position: -62px -40px*2; }
+		&-bank { background-position: -62px*2 -40px*2; }
+		&-plan { background-position: -62px*3 -40px*2; }
+	}
+}
+.address {
+	background: $gray3;
+	p {
+		margin: 0;
+		color: #b1b1b1;
+		font-size: 14px;
+	}
+	a {
+		color: #b1b1b1;
+		font-size: 14px;
+		text-decoration: underline;
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}

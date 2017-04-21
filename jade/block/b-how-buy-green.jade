@@ -1,0 +1,12 @@
+- var path = "/bitrix/templates/corp_services_blue/images/redesign";
+- var items = [{title:"Рассчитайте онлайн",desc:"стоимость полиса с помощью калькулятора.",img:"comp"},{title:"Оплатите полис",desc:"удобным для Вас способом.",img:"card"},{title:"Полис сразу придет на E-mail",desc:"просто распечатайте его и возьмите с собой в поездку.",img:"print"}];
+
+.how-buy-green.row
+	each item,i in items
+		- var className = (i == 0) ? 'large-offset-1' : ''
+		div(class="#{className}").large-3.columns.how-buy-green__item
+			img(src="#{path}/how-#{item.img}-w.svg", alt="#{item.title}")
+			.how-buy-green__h-text
+				p.how-buy-green__title #{item.title}
+				p.how-buy-green__desc #{item.desc}
+	.large-1.columns

@@ -1,0 +1,41 @@
+.ins-cover {
+	padding-right: 0;
+	&__title {
+		font-size: 18px;
+		margin-bottom: 5px;
+	}
+	&__list {
+		list-style: none;
+		margin: 0;
+		li {
+			padding: 0;
+			font-size: 16px;
+			color: #333;
+			margin-bottom: 5px;
+			p {
+				margin: 0;
+				@extend .align_middle;
+			}
+		}
+	}
+	&__ico {
+		@extend .align_middle;
+		width: 20px;
+		height: 22px;
+		margin-right: 10px;
+		background: url('../images/redesign/insurance-sprite.png');
+		&-med { background-position: 0 0; }
+		&-stom { background-position: -20px 0; }
+		&-rep { background-position: -20px*2 0; }
+		&-gosp { background-position: 0 -22px; }
+		&-per { background-position: -20px -22px; }
+		&-evak { background-position: -20px*2 -22px; }
+		&-otm { background-position: 0 -22px*2; }
+		&-zad { background-position: -20px -22px*2; }
+		&-dosr { background-position: -20px*2 -22px*2; }
+		&-yur { background-position: 0 -22px*3; }
+		&-pot { background-position: -20px -22px*3; }
+		&-otv { background-position: -20px*2 -22px*3; }
+		&-prozh { background-position: 0 -22px*4; }
+	}
+}

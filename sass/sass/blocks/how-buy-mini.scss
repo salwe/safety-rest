@@ -1,0 +1,33 @@
+.how-buy-mini {
+	&__h-img {
+		height: 95px;
+		width: 105px;
+		margin: 0 auto 20px;
+		text-align: center;
+		position: relative;
+		&::before {
+			content: '';
+			height: 100%;
+			@extend .align_middle;
+		}
+	}
+	&__img {
+		margin: 0;
+		@extend .align_middle;
+	}
+	&__arrow {
+		position: absolute;
+		top: 50%;
+		left: 180px;
+	}
+
+	&__item {
+		p {
+			width: 200px;
+			margin: 0 auto;
+			font-size: 16px;
+			line-height: 18px;
+			text-align: center;
+		}
+	}
+}

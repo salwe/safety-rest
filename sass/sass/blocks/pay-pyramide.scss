@@ -1,0 +1,38 @@
+.pay-pyramide {
+	&__row-title {
+		display: table;
+		height: 78px;
+		p {
+			font-size: 20px;
+			font-weight: 500;
+			line-height: 22px;
+			margin: 0;
+			vertical-align: middle;
+			display: table-cell;
+		}
+	}
+	&__img {
+		width: 170px;
+		height: 78px;
+		background-color: #fff;
+		background-image: url('../images/redesign/pay-sprite.png');
+		@include box-shadow(0 0 5px 1px rgba(0,0,0,0.1));
+		&-master { background-position: 0 0;}
+		&-visa { background-position: -170px 0;}
+		&-mir { background-position: -170px*2 0;}
+		&-pay { background-position: -170px*3 0;}
+		&-qiwi { background-position: 0 -78px;}
+		&-ya { background-position: -170px -78px;}
+		&-webm { background-position: -170px*2 -78px;}
+		&-eks { background-position: -170px*3 -78px;}
+		&-mts { background-position: 0 -78px*2;}
+		&-beeline { background-position: -170px -78px*2;}
+		&-tele2 { background-position: -170px*2 -78px*2;}
+		&-alfa { background-position: -170px*3 -78px*2;}
+		&-euros { background-position: 0 -78px*3;}
+		&-svyaz { background-position: -170px -78px*3;}
+	}
+	.row {
+		margin-bottom: 28px;
+	}
+}

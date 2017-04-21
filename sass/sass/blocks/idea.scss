@@ -1,0 +1,40 @@
+.idea {
+	background-color: #fff;
+	padding: 22px 25px;
+	@include box-shadow(0 0 4px 1px rgba(0,0,0,0.06));
+	&__light {
+		@extend .align_middle;
+		width: 52px;
+		height: 75px;
+		background: url('../images/redesign/light.svg');
+		margin-right: 24px;
+	}
+	&__h-text {
+		@extend .align_middle;
+	}
+	&__title {
+		font-size: 18px;
+		font-weight: bold;
+		line-height: 22px;
+		margin: 0;
+	}
+	&__desc {
+		font-size: 16px;
+		line-height: 18px;
+		margin: 0;
+	}
+
+	&-home {
+		height: 122px;
+		background: #fff url('../images/redesign/idea-home.png') no-repeat right center;
+	}
+	&-lifehack {
+		height: 122px;
+		background: #fff url('../images/redesign/idea-hands.png') no-repeat right center;
+
+	}
+	.red {
+		color: #900e0e;
+		font-size: 18px;
+	}
+}

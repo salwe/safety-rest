@@ -1,0 +1,26 @@
+.uslugi {
+	&__item {
+		margin-bottom: 24px;
+		padding: 0;
+	}
+	&__img {
+		padding-left: 0;
+	}
+	&__info {		
+		padding-top: 20px;
+	}
+	&__h-text {
+		height: 140px;
+		overflow: hidden;
+		margin-bottom: 19px;
+	}
+	&__title {
+		font-size: 18px;
+		font-weight: bold;
+		line-height: 1.15;
+		margin-bottom: 10px;
+	}
+	&__desc {
+		line-height: 1.15;
+	}
+}

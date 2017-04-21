@@ -1,0 +1,21 @@
+.how-buy-green {
+	background: $green;
+	padding: 15px 0;
+	&__h-text {}
+	&__title {
+		color: #fff;
+		text-decoration: underline;
+		font-size: 15px;
+		line-height: 1.15;
+	}
+	&__desc {
+		color: #fff;
+		margin: 0;
+		font-size: 15px;
+		line-height: 1.15;
+	}
+	img {
+		float: left;
+		margin-right: 10px;
+	}
+}

@@ -1,0 +1,20 @@
+.f-quest
+	.f-quest__close
+	.f-quest__header
+		p.f-quest__title Мы ответим на любой интересующий Вас вопрос!
+	form
+		.row
+			.large-12.column
+				label Ваше имя
+					input(type="text",name="name",placeholder="Как к Вам обращаться")
+		.row
+			.large-12.column
+				label Ваш e-mail *
+					input(type="text",name="email",placeholder="pochta@pochta.ru")
+		.row
+			.large-12.column
+				label Ваш вопрос *
+					textarea(name="txt", rows="4",placeholder="Опишите Ваш вопрос")
+		.row
+			.large-12.column
+				a.btn.btn_color_green Отправить

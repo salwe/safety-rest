@@ -1,0 +1,12 @@
+- var path = "/bitrix/templates/corp_services_blue/images/redesign/";
+- var items = [{title:"Краткосрочный полис",img:"",link:"/kratkosrochniy-polis.php",text:"На нашем сайте Safety Of Rest Вы можете купить онлайн страховку для выезда за границу на даты поездки от страховой компании Zetta Insurance Company Ltd."},{title:"Годовой полис",img:"",link:"/godovoy-polis.php",text:"Годовой полис для поездки за границу - это выгодный продукт для активных путешественников."},{title:"Страховка для оформления визы D (Д)",img:"",link:"/strahovanie-dlja-poluchenija-vida-na-zhitelstvo.php",text:"Страхование для получения вида на жительство"},{title:"Страховка для горнолыжников",img:"",link:"/strahovka-dly-gornolyzhnikov.php",text:"Горные лыжи - захватывающий вид экстремального спорта, который пользуется огромной популярностью."},{title:"Страхование для занятий спортом",img:"",link:"/strahovanie-dly-zanjatiya-sportom.php",text:"Занятия спортом дают человеку множество преимуществ: отличная физическая форма, крепкий иммунитет, умение концентрироваться и добиваться поставленной целию."},{title:"Страхование зимних видов спорта",img:"",link:"/strahovanie-zimnix-vidov-sporta.php",text:"Зимними видами спорта принято считать те, которые проводятся на льду или же на снегу (горные лыжи, фристайл, сноуборд и многое другое)."},{title:"Страхование отмены поездки",img:"",link:"/strahovanie-ot-neviezda.php",text:"Страховка от невыезда — удобный инструмент, позволяющий получить достойную денежную компенсацию в непредвиденной ситуации."},{title:"Страховка по России",img:"",link:"/uslugi/straxovka-dlya-puteshestvij-po-rossii.php",text:"На сайте Safety Of Rest можно быстро и выгодно приобрести страховку для поездок по России и странам СНГ."},{title:"Авиабилеты",img:"",link:"/aviabilety.php",text:"На нашем сайте можно купить авиабилеты по всем направлениям."}];
+
+each item,i in items
+	.uslugi__item.h-block-white.row
+		.uslugi__img.large-7.columns
+			img(src="#{path}/usl#{i+1}.png", alt="")
+		.uslugi__info.large-5.columns
+			.uslugi__h-text
+				.uslugi__title #{item.title}
+				.uslugi__desc #{item.text}
+			a(href='#{item.link}').btn.btn_color_void Подробнее

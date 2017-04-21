@@ -1,0 +1,7 @@
+- var items = [{title:"Годовой полис",price:"3800 рублей",link:"/uslugi/godovoy-polis.php"},{title:"Годовой полис «Весь мир»",price:"7700 рублей",link:"/uslugi/godovoy-polis.php"},{title:"Страховка для визы",price:"65 рублей в день",link:"/orderonline.php"},{title:"Страховка для поездки в Азию",price:"380 рублей",link:"/strahovka-tayland.php"},{title:"Страховка для туристов",price:"/strahovka-tayland.php",link:"/uslugi/strahovanie-za-rubezh.php"},{title:"Страховые полисы для занятий спортом",price:"770 рублей",link:"/uslugi/strahovka-dlya-sporta.php"},{title:"Страховка для визы D",price:"22000 рублей",link:"/uslugi/strahovanie-dlja-poluchenija-vida-na-zhitelstvo.php"},{title:"Страхование поездок по России",price:"230 рублей",link:"/uslugi/straxovka-dlya-puteshestvij-po-rossii.php"},{title:"Спортивная страховка для поездок по России и СНГ",price:"460 рублей",link:"/uslugi/strahovka-dlya-sporta.php"}];
+
+.offers.slick-nav.slick-nav-white
+	each item in items
+		.offers-item
+			p.offers-item__title #[span.bold #{item.title}]#[br]от #[span.bold #{item.price}]
+			a(href='#{item.link}').btn.btn_color_white Узнать больше

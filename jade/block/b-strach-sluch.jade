@@ -1,0 +1,24 @@
+- var path = "/bitrix/templates/corp_services_blue/images/redesign";
+- var counter = 1;
+mixin item(imgCount, useArrow)
+	.strah-sluch__h-img
+		img(src='#{path}/ss#{img_count}.svg')
+		if (useArrow)
+			img(src='#{path}/g-arrow.svg').strah-sluch__arrow
+
+.strah-sluch
+	.t-topic
+		p Страховой случай
+	.row
+		.large-3.columns.large-offset-1.strah-sluch__item
+			+item(counter, true)
+			p Свяжитесь с Сервисной компанией по телефону, указанному в полисе.
+		.large-4.columns.strah-sluch__item
+			+item(counter++, true)
+			p Оператор направит вас в одну из лучших клиник региона пребывания.
+		.large-3.columns.strah-sluch__item
+			+item(counter++, false)
+			p Ваше лечение оплачивает страховая компания!
+		.large-1.columns
+	.row
+		a(href='/o-kompanii/strahovoisluchai.php').btn.btn_color_void.large-centered Узнать больше

@@ -1,0 +1,27 @@
+.slider-with-calc {
+	position: relative;
+}
+.slider_size_full {
+	z-index: 3;
+	&__item {
+		height: 475px;
+		.h_text {
+			@extend .h-content-to-bottom;
+			height: 100%;
+			p {
+				color: #fff;
+				font-size: 30px;
+				line-height: 30px;
+				margin-bottom: 60px;
+				text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
+			}
+		}
+	}
+	&__item_star {
+		background: url('../images/redesign/slider1.png') no-repeat;
+	}
+	&__item_people {
+		background: url('../images/redesign/slider2.png') no-repeat;
+	}
+
+}

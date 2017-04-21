@@ -1,0 +1,14 @@
+@import 'f-question';
+
+
+.form-popup {
+	&__close {
+		position: absolute;
+		right: 10px;
+		top: 10px;
+		width: 13px;
+		height: 13px;
+		background: url('../images/redesign/close-w.png');
+		cursor: pointer;
+	}
+}

@@ -1,0 +1,9 @@
+- var items = [{title:"Медицинские расходы, транспортировка",ico:"med"},{title:"Экстренная стоматология",ico:"stom"},{title:"Репатриация",ico:"rep"},{title:"Возвращение после госпитализации",ico:"gost"},{title:"Переговоры с сервисной компанией",ico:"per"},{title:"Эвакуация детей",ico:"evak"},{title:"Отмена поездки",ico:"otm"},{title:"Задержка авиарейса",ico:"zad"},{title:"Досрочное возвращение",ico:"dosr"},{title:"Юридическая помощь",ico:"yur"},{title:"Потеря, хищения документов / багажа",ico:"pot"},{title:"ражданская ответственность",ico:"otv"},{title:"Проживание, проезд третьего лица",ico:"prozh"}];
+
+.h-block-white.ins-cover
+	.ins-cover__title Что покрывает страховка?
+		ul.ins-cover__list
+			each item in items
+				li
+					span(class='ins-cover__ico ins-cover__ico-#{item.ico}')
+					p #{item.title}

@@ -1,0 +1,11 @@
+- var path = "/bitrix/templates/corp_services_blue/images/redesign";
+- var items = [{title:"Оплата наличными.",src:"money",desc:"Полис можно оплатить наличными денежными средствами в офисе или заказать доставку курьером.",href:""},{title:"Доставка курьером.",src:"people",desc:"Стоимость доставки курьером – 500 рyб. (по Москве)",href:"#"},{title:"Забрать полис в офисе.",src:"office",desc:"По нашим тарифам в центральном офисе Zetta.",href:"#"}];
+
+.row.how-get
+	each item in items
+		.large-4.columns.b-img-center
+			img(src='#{path}/how-#{item.src}.png')
+			p.how-get__title #{item.title}
+			p.how-get__desc #{item.desc}
+				if (item.href)
+					|#{' '}#[a(href='#{item.href}') Узнать подробнее...]

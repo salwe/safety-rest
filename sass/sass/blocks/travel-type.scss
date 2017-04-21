@@ -1,0 +1,11 @@
+.travel-type {
+	&__link {
+		font-size: 20px;
+		color: $green;
+		text-decoration: underline;
+		margin-left: 30px;
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}
