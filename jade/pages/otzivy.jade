@@ -1,8 +1,17 @@
+- var items = [];
 
-.feedback
-	p.feedback__title Оставляйте Ваши отзывы в наших аккаунтах в соцсетях
-	.feedback__h-links
-		a(href="#").feedback__link.feedback__vk Оставить отзыв
-		a(href="#").feedback__link.feedback__fb Оставить отзыв
-		a(href="#").feedback__link.feedback__ig #safetyrestru_отзывы
+.social
+	p.social__title Оставляйте Ваши отзывы в наших аккаунтах в соцсетях
+	.social__h-links
+		a(href="#").social__link.social__vk Оставить отзыв
+		a(href="#").social__link.social__fb Оставить отзыв
+		a(href="#").social__link.social__ig #safetyrestru_отзывы
 h1 Отзывы
+.feedback
+	each item in items
+		.feedback__item
+			.feedback__h-img
+				img(src="#{item.src}", alt="")
+			a.feedback__text
+				p.feedback__author.text-right #{item.text}
+				a(href="#", class="").feedback__viewmore.text-right Посмотреть отзыв
