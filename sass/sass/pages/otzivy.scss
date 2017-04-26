@@ -1,0 +1,127 @@
+.soc-feedb {
+	&__title {
+		font-size: 30px;
+		margin-bottom: 10px;
+	}
+	&__link {
+		font-size: 22px;
+		color: #fff;
+		padding-left: 60px;
+		border-radius: 5px;
+		display: inline-block;
+		width: 290px;
+		height: 50px;
+		line-height: 50px;
+		margin-right: 20px;
+		span {
+			width: 38px;
+			height: 38px;
+			display: inline-block;
+			background: url('../images/redesign/soc-vk-blue.svg') no-repeat;
+		}
+	}
+	&__vk {
+		background: #4d75a3;
+	}
+	&__fb {
+		background: #0b5596;
+	}
+	&__ig {
+		@include horiz-gradient(#f7b45d, #d4446f);
+	}
+
+}
+.feedback {
+	&__item {
+		position: relative;
+	}
+	&__h-img {
+		position: absolute;
+		top: 0;
+		left: 40%;
+		cursor: pointer;
+		img {
+			border-radius: 50%;
+			border: solid 2px #fff;
+		}
+	}
+	&__h-text {
+		margin-top: 50px;
+		padding-top: 50px;
+	}
+	&__text {
+		color: $gray3;
+		font-size: 16px;
+		line-height: 1.15;
+		height: 74px;
+		display: block;
+		overflow: hidden;
+		margin-bottom: 20px;
+		cursor: pointer;
+	}
+	&__date {
+		display: none;
+	}
+	&__author {
+		margin: 0;
+		font-weight: bold;
+	}
+	&__viewmore {
+		font-size: 14px;
+		color: $gray3;
+		padding-right: 20px;
+		background-position: right center;
+		background-repeat: no-repeat;
+	}
+	&__linkout-vk { background-image: url('../images/redesign/otz-mini-vk.png'); }
+	&__linkout-fb { background-image: url('../images/redesign/otz-mini-fb.png'); }
+	&__linkout-ig { background-image: url('../images/redesign/otz-mini-ig.png'); }
+
+	&__showmore {
+		margin-top: 40px;
+	}
+
+	&-popup {
+		display: none;
+
+		position: fixed;
+		top: 150px;
+		left: 40%;
+		width: 420px;
+		z-index: 10000;
+		&__author {
+			font-weight: bold;
+			margin-bottom: 0px;
+		}
+		&__date {
+			margin-bottom: 5px;
+			font-size: 14px;
+			color: #bababa;
+		}
+		&__h-img {
+			position: absolute;
+			left: 40%;
+			top: -40px;
+			img {
+				border-radius: 50%;
+				border: solid 2px #fff;
+			}
+		}
+		&__h-text {
+			padding: 50px 25px 20px;
+			background: #fff;
+		}
+		&__text {
+			line-height: 1.1;
+		}
+		&__linkout {
+			&-text {
+				font-size: 14px;
+				color: #bababa;
+			}
+			&-ico {
+				
+			}
+		}
+	}
+}

@@ -1,0 +1,31 @@
+.contactus {
+	background: url('../images/redesign/contactus-bg.png') no-repeat;
+	background-size: cover;
+	padding: 20px;
+	&__title {
+		color: #fff;
+		font-size: 30px;
+		line-height: 1.2;
+		text-align: center;
+	}
+	&__btn {
+		display: block;
+		width: 200px;
+		height: 36px;
+		line-height: 36px;
+		margin: 26px auto 0;
+		text-transform: uppercase;
+		border-radius: 3px;
+		font-size: 13px;
+		text-align: center;
+		font-weight: bold;
+		&-quest {
+			background: $yellow;
+			color: $gray3;
+		}
+		&-call {
+			background: $green;
+			color: #fff;
+		}
+	}
+}

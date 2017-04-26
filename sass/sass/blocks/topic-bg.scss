@@ -1,0 +1,29 @@
+.orderonline-topic {
+	background: url('../images/redesign/buyonline-bg.png') no-repeat;
+	background-size: cover;
+	min-height: 360px;
+}
+.about-topic {
+	background: url('../images/redesign/company-bg.png') no-repeat;
+	background-size: cover;
+	min-height: 320px;
+	&__desc {
+		max-width: 515px;
+		font-size: 22px;
+		line-height: 1.4;
+		margin-bottom: 40px;
+	}
+}
+.faq-topic {
+	background: url('../images/redesign/faq-bg.png') no-repeat;
+	background-size: cover;
+	min-height: 325px;
+}
+
+.topic-white {
+	.breadcrumb-navigation,
+	h1,
+	p {
+		color: #fff;
+	}
+}

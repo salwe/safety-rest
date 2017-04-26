@@ -1,0 +1,19 @@
+.search {
+	&__submit-btn {
+		background: $yellow;
+		font-weight: bold;
+		font-size: 14px;
+		color: $gray3;
+		text-transform: uppercase;
+		padding: 0 30px;
+		border-radius: 0 3px 3px 0;
+	}
+	input {
+		height: 35px;
+		border: none;
+	}
+}
+
+.h-search {
+	max-width: 682px;
+}

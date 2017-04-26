@@ -1,0 +1,38 @@
+.p-faq {
+	&__title {
+		font-size: 22px;
+		font-weight: 500;
+	}
+	.faq__item {
+		margin-bottom: 20px;
+	}
+}
+.faq {
+	&__item {
+		padding: 10px;
+	}
+	&__question {
+		font-weight: bold;
+		&-ico {
+			color: $green;
+			display: inline-block;
+			width: 30px;
+			height: 30px;
+			line-height: 30px;
+			border-radius: 50%;
+			text-align: center;
+			margin-right: 5px;
+			border: solid 2px $green;
+		}
+		&:hover {
+			cursor: pointer;
+		}
+	}
+	&__answer {
+		display: none;
+
+		margin: 10px 0 5px 45px;
+		padding-left: 10px;
+		border-left: solid 2px $green;
+	}
+}

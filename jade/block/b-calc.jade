@@ -1,0 +1,44 @@
+.calc.h-block-white
+	.row
+		.large-12.columns
+			.calc__title Не забудьте купить страховку
+			label Куда поедете?
+			.calc__h-country-inp
+				span
+				input(type="text",placeholder="Введите название страны").calc__country-inp
+	.row
+		.large-6.columns
+			.calc__h-duration-cb
+				input#multyPolis(type="checkbox")
+				label(for="multyPolis") Полис на год
+		.large-6.columns
+			span.calc__duration-add-ico +
+			span.calc__duration-add-btn добавить страну
+	.row
+		.large-6.columns
+			label Отъезд
+			input(type="text",name="departureDate")
+		.large-6.columns
+			label Возвращение
+			input(type="text",name="returnDate")
+	.row
+		.large-12.columns
+			label Количество путешественников
+		.large-6.columns
+			input(type="text")
+		.large-6.columns
+			.calc__submit-btn Узнать цену
+	.row
+		.large-6.columns
+			.calc__h-promo
+				span.calc__promo-btn Промокод
+				span.calc__promo-ico
+					.calc__promo-desc Промо-код дает право на скидку. Поле не обязательно для заполнения.
+		.large-6.columns
+			input(type="text",name="promocode")
+	.row
+		.large-12.columns
+			label Мы работаем:
+			.calc__partners
+				img(src="/bitrix/templates/corp_services_blue/images/redesign/part1.png")
+				img(src="/bitrix/templates/corp_services_blue/images/redesign/part2.png")
