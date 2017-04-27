@@ -1,0 +1,15 @@
+.blog-mini {
+	display: block;
+	color: $gray3;
+	&__title {
+		line-height: 1.2;
+		margin-left: 140px;
+	}
+	&__h-img {
+		margin-right: 20px;
+		img {
+			max-width: 120px;
+			max-height: 80px;
+		}
+	}
+}

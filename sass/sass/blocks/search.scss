@@ -7,10 +7,30 @@
 		text-transform: uppercase;
 		padding: 0 30px;
 		border-radius: 0 3px 3px 0;
-	}
-	input {
 		height: 35px;
 		border: none;
+	}
+	&__input {
+		height: 35px;
+		border: none;
+	}
+}
+.search-blog {
+	input {
+		margin: 0;
+	}
+	&__input {
+		height: 45px;
+		border: solid 1px #ebebeb;
+		border-radius: 3px 0 0 3px;
+		box-shadow: none;
+	}
+	&__submit-btn {
+		background: $green url('../images/redesign/search-w.svg') no-repeat;
+		background-position: center;
+		padding: 0 30px;
+		border-radius: 0 3px 3px 0;
+		height: 45px;
 	}
 }
 

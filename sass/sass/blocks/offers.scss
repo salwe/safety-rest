@@ -2,6 +2,18 @@
 .offers {
 	margin: 0;
 }
+.h-offers {
+	position: relative;
+	&__title {
+		color: #fff;
+		font-size: 18px;
+		position: absolute;
+		top: 30px;
+		left: 55px;
+		margin: 0;
+		z-index: 100;
+	}
+}
 .offers-item {
 	background: url('../images/redesign/peoples1.png') no-repeat;
 	height: 385px;

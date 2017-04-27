@@ -1,0 +1,36 @@
+.blog-int {
+	.blog-item {
+		margin-bottom: 30px;
+		&__image-cover {
+			width: 50%;
+			@include horiz-gradient(rgba(255,255,255,0), rgba(255,255,255,1), 50%, 100%);
+		}
+		&__info {
+			width: 50%;
+		}
+		&__date {
+			color: $gray3;
+			font-size: 14px;
+			background: url('../images/redesign/calend.svg') no-repeat;
+			padding-left: 30px;
+			margin-top: 15px;
+			margin-bottom: 15px;
+		}
+		&__h-text {
+			height: 180px;
+		}
+		&__views {
+			font-size: 14px;
+			padding-left: 25px;
+			background: url('../images/redesign/eye-gray.svg') no-repeat left center;
+			display: block;
+			margin-top: 5px;
+		}
+		&__h-btm {
+			margin-top: 20px;
+		}
+		.btn {
+			margin: 0;
+		}
+	}
+}

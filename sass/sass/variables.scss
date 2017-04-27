@@ -26,10 +26,10 @@ $yellow: #ffcc00;
   -webkit-transform: rotate($deg);
   transform: rotate($deg);
 }
-@mixin horiz-gradient($color1, $color2) {
+@mixin horiz-gradient($color1, $color2, $startpers:0%, $endpers:100%) {
   background: $color1;
-  background: -moz-linear-gradient(left, $color1 0%, $color2 100%);
-  background: -webkit-linear-gradient(left, $color1 0%, $color2 100%);
-  background: linear-gradient(to right, $color1 0%, $color2 100%);
+  background: -moz-linear-gradient(left, $color1 $startpers, $color2 $endpers);
+  background: -webkit-linear-gradient(left, $color1 $startpers, $color2 $endpers);
+  background: linear-gradient(to right, $color1 $startpers, $color2 $endpers);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color1', endColorstr='$color2',GradientType=1 );
 }
