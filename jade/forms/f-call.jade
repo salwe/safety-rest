@@ -1,16 +1,23 @@
-.f-call
-	.f-call__close
-	.f-call__header
-		p.f-call__title Мы ответим на любой интересующий Вас вопрос!
-	form
-		.row
-			.large-12.column
-				label Ваше имя
-					input(type="text",name="name",placeholder="Как к Вам обращаться")
-		.row
-			.large-12.column
-				label Ваш телефон *
-					input(type="text",name="phone",placeholder="+7 (___) ___-__-__")
-		.row
-			.large-12.column
-				a.btn.btn_color_green Отправить
+.f-call.form-popup
+	.form-popup__close
+	.form-popup__h-form
+		.form-popup__header
+			p.form-popup__title Мы ответим на любой интересующий Вас вопрос!
+			p.f-call__desc Оставьте свой номер телефона,#[br]и мы перезвоним Вам в течение 15 мин.
+		form
+			input(type="hidden" name="form_type" value="call")
+			.row
+				.large-12.column
+					label Ваше имя
+						input(type="text",name="name",placeholder="Как к Вам обращаться")
+			.row
+				.large-12.column
+					label Ваш телефон *
+						input(type="text",name="phone",placeholder="+7 (___) ___-__-__",data-req="1",data-type="text")
+			.row
+				.large-12.column
+					a.btn.btn_color_green.btn-submit Жду звонка
+	.form-popup__answer
+		.form-popup__answer-img
+		p.form-popup__answer-title Ваши данные получены.
+		p.form-popup__answer-text Мы перезвоним Вам в ближайшее время.

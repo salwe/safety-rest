@@ -1,0 +1,17 @@
+.b-quests {
+	margin: 0;
+	li {
+		list-style: none;
+		padding-left: 25px;
+		background: url('../images/redesign/quest-y.svg') no-repeat left center;
+		margin-bottom: 7px;
+		a {
+			color: $gray3;
+			text-decoration: underline;
+			&:hover {
+				color: inherit;
+				text-decoration: none;
+			}
+		}
+	}
+}

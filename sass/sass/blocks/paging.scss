@@ -1,0 +1,25 @@
+.paging {
+	&__text {
+		@extend .align_middle;
+	}
+	&__current-page {
+		width: 34px;
+		text-align: center;
+		border: solid 2px #ccc;
+		margin: 0 5px;
+		display: inline-block;
+		line-height: 30px;
+		border-radius: 5px;
+	}
+	&__btn {
+		@extend .align_middle;
+		background: url("../images/redesign/slick-arr-g.svg");
+		width: 34px;
+		height: 34px;
+	}
+	&__prev {
+		@include rotate(180deg);
+	}
+	&__next {
+	}
+}

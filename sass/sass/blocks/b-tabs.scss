@@ -4,7 +4,8 @@
 		display: inline-block;
 		outline: none;
 		cursor: pointer;
-		padding: 14px 15px;
+		padding: 14px 0;
+		width: 100%;
 		transition: 0.3s;
 		border-bottom: solid 5px #bbb;
 		font-size: 16px;
@@ -17,6 +18,12 @@
 	}
 	&__head {
 		text-align: justify;
+		&.row {
+			margin: 0;
+		}
+		.columns {
+			padding: 0 5px;
+		}
 		&::after {
 			content: '';
 			display: inline-block;
@@ -48,5 +55,5 @@
 }
 
 .contacts {
-	.b-tabs__tab-btn { padding: 14px 85px; }
+	.b-tabs__tab-btn { padding: 14px 0; width: 100%; }
 }

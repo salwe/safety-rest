@@ -1,0 +1,71 @@
+.f-login {
+	background: #fff;
+	max-width: 500px;
+	&__header-desc {
+		text-align: center;
+		color: #fff;
+		margin: 0;
+		a {
+			color: #fff;
+			text-decoration: underline;
+			&:hover {
+				color: inherit;
+				text-decoration: none;
+			}
+		}
+	}
+	&__bottom {
+		margin: 0px 20px;
+		border-top: solid 1px #bababa;
+	}
+	&__soc-title {
+		font-weight: bold;
+		text-align: center;
+		font-size: 18px;
+		margin: 10px 0;
+	}
+	&__forgot {
+		color: #3398cc;
+		text-decoration: underline;
+		&:hover {
+			text-decoration: none;
+		}
+	}
+	&__h-soc {
+		margin-bottom: 20px;
+	}
+	&__soc-link {
+		width: 132px;
+		height: 36px;
+		line-height: 36px;
+		color: #fff;
+		padding-left: 40px;
+		border-radius: 3px;
+		display: block;
+		font-size: 14px;
+		background-position: left 7px center;
+		background-repeat: no-repeat;
+	}
+	&__fb {
+		background-color: #1f6dd0;
+		background-image: url('../images/redesign/soc-fb-w.svg');
+	}
+	&__vk {
+		background-color: #3684c5;
+		background-image: url('../images/redesign/soc-vk-w.svg');
+	}
+	&__desc {
+		font-size: 12px;
+		line-height: 1.15;
+		padding: 0 15px;
+	}
+	form {
+		padding: 15px 0;
+	}
+	.row {
+		width: 295px;
+	}
+	.btn-submit {
+		margin: 20px auto;
+	}
+}

@@ -1,12 +1,15 @@
 .b-imgbg {
 	&.risks {
 		background: url('../images/redesign/risks-bg.png') no-repeat;
+		-webkit-background-size: cover;
+		background-size: cover;
 	}
 	&.zetta-adv {
 		background: url('../images/redesign/zetta-bg.png') no-repeat;
+		-webkit-background-size: cover;
+		background-size: cover;
 		height: 490px;
 	}
-	background-size: cover;
 	padding: 30px 0 20px;
 	&__title {
 		color: #fff;

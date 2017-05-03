@@ -1,20 +1,25 @@
-.f-quest
-	.f-quest__close
-	.f-quest__header
-		p.f-quest__title Мы ответим на любой интересующий Вас вопрос!
-	form
-		.row
-			.large-12.column
-				label Ваше имя
-					input(type="text",name="name",placeholder="Как к Вам обращаться")
-		.row
-			.large-12.column
-				label Ваш e-mail *
-					input(type="text",name="email",placeholder="pochta@pochta.ru")
-		.row
-			.large-12.column
-				label Ваш вопрос *
-					textarea(name="txt", rows="4",placeholder="Опишите Ваш вопрос")
-		.row
-			.large-12.column
-				a.btn.btn_color_green Отправить
+.f-quest.form-popup
+	.form-popup__close
+	.form-popup__h-form
+		.form-popup__header
+			p.form-popup__title Мы ответим на любой интересующий Вас вопрос!
+		form
+			.row
+				.large-12.column
+					label Ваше имя
+						input(type="text",name="name",placeholder="Как к Вам обращаться")
+			.row
+				.large-12.column
+					label Ваш e-mail *
+						input(type="text",name="email",placeholder="pochta@pochta.ru",,data-req="1",data-type="email")
+			.row
+				.large-12.column
+					label Ваш вопрос *
+						textarea(name="txt", rows="4",placeholder="Опишите Ваш вопрос",,data-req="1",data-type="text")
+			.row
+				.large-12.column
+					a.btn.btn_color_green.btn-submit Отправить
+	.form-popup__answer
+		.form-popup__answer-img
+		p.form-popup__answer-title Ваш вопрос отправлен.
+		p.form-popup__answer-text Мы ответим Вам в ближайшее время.

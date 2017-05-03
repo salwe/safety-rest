@@ -27,8 +27,9 @@
 			font-weight: 500;
 			line-height: 20px;
 			margin-bottom: 10px;
+			display: block;
 		}
-		a {
+		.phone, .mail {
 			color: $green;
 			display: block;
 			font-weight: 500;
@@ -105,6 +106,42 @@
 		text-decoration: underline;
 		&:hover {
 			text-decoration: none;
+		}
+	}
+}
+.partners {
+	&__title {
+		margin-bottom: 5px;
+	}
+}
+.joinus {
+	&__ico {
+		@extend .align_middle;
+		width: 30px;
+		height: 20px;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	p {
+		@extend .align_middle;
+		font-size: 15px;
+	}
+	&__vk {
+		background-image: url('../images/redesign/soc-gr-vk.svg');
+		&:hover {
+			background-image: url('../images/redesign/soc-bl-vk.svg');
+		}
+	}
+	&__fb {
+		background-image: url('../images/redesign/soc-gr-fb.svg');
+		&:hover {
+			background-image: url('../images/redesign/soc-bl-fb.svg');
+		}
+	}
+	&__ig {
+		background-image: url('../images/redesign/soc-gr-ig.svg');
+		&:hover {
+			background-image: url('../images/redesign/soc-bl-ig.svg');
 		}
 	}
 }

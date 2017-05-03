@@ -1,7 +1,15 @@
 @import 'f-question';
+@import 'f-call';
+@import 'f-login';
 
 
 .form-popup {
+	opacity: 0;
+	display: none;
+	position: fixed;
+	left: 36%;
+	top: 150px;
+	z-index: 10000;
 	&__close {
 		position: absolute;
 		right: 10px;
@@ -10,5 +18,57 @@
 		height: 13px;
 		background: url('../images/redesign/close-w.png');
 		cursor: pointer;
+	}
+	&__header {
+		background: url('../images/redesign/form-header.png') no-repeat;
+		background-size: cover;
+		padding: 20px;
+	}
+	&__title {
+		color: #fff;
+		font-size: 30px;
+		line-height: 1.2;
+		font-weight: 500;
+		text-align: center;
+		margin: 0;
+	}
+	label {
+		color: $gray3;
+		font-size: 16px;
+	}
+	input[type="text"],
+	textarea {
+		border: solid 1px #bababa;
+		border-radius: 3px;
+		box-shadow: none;
+	}
+	textarea {
+		resize: none;
+	}
+	&__answer {
+		display: none;
+		position: relative;
+		padding: 50px 60px 70px;
+		&-img {
+			position: absolute;
+			top: -130px;
+			left: -30px;
+			background: url('../images/redesign/balloon.png') no-repeat;
+			width: 143px;
+			height: 197px;
+		}
+		&-title {
+			font-weight: bold;
+			font-size: 30px;
+			text-align: center;
+			margin: 0;
+		}
+		&-text {
+			text-align: center;
+			margin: 0;
+		}
+	}
+	.inp-error {
+		border: solid 1px red !important;
 	}
 }

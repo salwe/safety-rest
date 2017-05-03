@@ -12,3 +12,19 @@
 		margin-left: 40px;
 	}
 }
+.p-topic-spain {
+	background: url('../images/redesign/spain.png');
+	height: 358px;
+	h1 {
+		color: #fff;
+		margin-left: 40px;
+	}
+}
+
+.count-slider {
+	&__item {
+		height: 160px;
+		overflow: hidden;
+	}
+
+}

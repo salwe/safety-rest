@@ -1,6 +1,12 @@
-.f-quest {
+.f-call {
 	background: #fff;
 	max-width: 500px;
+	&__desc {
+		color: #fff;
+		margin: 0;
+		line-height: 1.2;
+		text-align: center;
+	}
 	form {
 		padding: 15px 0;
 	}
