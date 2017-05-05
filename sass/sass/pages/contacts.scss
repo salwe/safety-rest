@@ -1,0 +1,9 @@
+.p-contacts {
+	.cont-phone {
+		font-size: 22px;
+		text-decoration: none;
+		&:hover {
+			color: $gray3;
+		}
+	}
+}

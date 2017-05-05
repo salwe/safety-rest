@@ -78,6 +78,8 @@
 		height: 40px;
 		@extend .align_middle;
 		border-radius: 3px;
+		float: right;
+		margin-left: 17px;
 		background: #fff url('../images/redesign/footer-payment.png');
 		&-visa { background-position: 0 0; }
 		&-mc { background-position: -62px 0; }
@@ -94,6 +96,7 @@
 	}
 }
 .address {
+	padding: 10px 0;
 	background: $gray3;
 	p {
 		margin: 0;
@@ -103,10 +106,7 @@
 	a {
 		color: #b1b1b1;
 		font-size: 14px;
-		text-decoration: underline;
-		&:hover {
-			text-decoration: none;
-		}
+		margin-top: 15px;
 	}
 }
 .partners {

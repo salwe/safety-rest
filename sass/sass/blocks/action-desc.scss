@@ -56,10 +56,39 @@
 	}
 	&__text {
 		line-height: 1.4;
+		a {
+			text-decoration: none;
+			&:hover {
+				color: $gray3;
+			}
+		}
 	}
 	&__text_mini {
 		font-size: 12px;
 		line-height: 1.15;
+	}
+	&__h-docs {
+		margin-bottom: 20px;
+	}
+	&__docs-btn {
+		color: $gray3;
+		padding-right: 20px;
+		margin-bottom: 20px;
+		.arr-ico {
+			background: url('../images/redesign/arrow.svg') no-repeat;
+			@extend .align_middle;
+			width: 10px;
+			height: 5px;
+			margin-left: 10px;
+		}
+		&.active {
+			.arr-ico {
+				@include rotate(180deg);
+			}
+		}
+	}
+	&__docs {
+		display: none;
 	}
 	ol {
 		counter-reset: item;

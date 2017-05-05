@@ -6,34 +6,50 @@
 	&__link {
 		font-size: 22px;
 		color: #fff;
-		padding-left: 60px;
+		padding-left: 10px;
 		border-radius: 5px;
 		display: inline-block;
 		width: 290px;
 		height: 50px;
 		line-height: 50px;
 		margin-right: 20px;
+		text-decoration: none;
 		span {
 			width: 38px;
-			height: 38px;
-			display: inline-block;
-			background: url('../images/redesign/soc-vk-blue.svg') no-repeat;
+			height: 35px;
+			margin-right: 5px;
+			margin-top: -3px;
+			@extend .align_middle;
+			background-position: center;
+			background-repeat: no-repeat;
+			border: solid 1px #fff;
+			border-radius: 5px;
 		}
 	}
 	&__vk {
-		background: #4d75a3;
+		background-color: #4d75a3;
+		span {
+			background-image: url('../images/redesign/otz-vk-w.svg');
+		}
 	}
 	&__fb {
-		background: #0b5596;
+		background-color: #0b5596;
+		span {
+			background-image: url('../images/redesign/otz-fb-w.svg');
+		}
 	}
 	&__ig {
 		@include horiz-gradient(#f7b45d, #d4446f);
+		span {
+			background-image: url('../images/redesign/otz-ig-w.svg');
+		}
 	}
 
 }
 .feedback {
 	&__item {
 		position: relative;
+		margin-bottom: 20px;
 	}
 	&__h-img {
 		position: absolute;
@@ -72,6 +88,7 @@
 		padding-right: 20px;
 		background-position: right center;
 		background-repeat: no-repeat;
+		text-decoration: none;
 	}
 	&__linkout-vk { background-image: url('../images/redesign/otz-mini-vk.png'); }
 	&__linkout-fb { background-image: url('../images/redesign/otz-mini-fb.png'); }
@@ -115,13 +132,20 @@
 			line-height: 1.1;
 		}
 		&__linkout {
+			@extend .align_middle;
+			width: 15px;
+			height: 15px;
+			background-position: center;
+			background-repeat: no-repeat;
+			margin-left: 5px;
 			&-text {
 				font-size: 14px;
 				color: #bababa;
 			}
-			&-ico {
-				
-			}
+			&-vk { background-image: url('../images/redesign/otz-mini-vk.png'); }
+			&-fb { background-image: url('../images/redesign/otz-mini-fb.png'); }
+			&-ig { background-image: url('../images/redesign/otz-mini-ig.png'); }
+			&-link { background-image: url('../images/redesign/otz-link.png'); }
 		}
 	}
 }

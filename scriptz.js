@@ -86,6 +86,11 @@ jQuery(document).ready(function($){
 		return false;
 	});
 
+	// Search btn in header
+	$('.search .call-btn').click(function() {
+		$(this).next('.form-wrap').toggle();
+	});
+
 	// Show feedback item in popup on /Otzivy page
 	$('.feedback .show_popup').click(function() {
 		var fbItem = $(this).closest('.feedback__item');
@@ -95,11 +100,16 @@ jQuery(document).ready(function($){
 		var author = $(fbItem).find('.feedback__author').text();
 		var text = $(fbItem).find('.feedback__text').text();
 		var img = $(fbItem).find('.feedback__h-img img').attr('src');
+		var link = $(fbItem).find('.feedback__viewmore').attr('href');
+		var site = $(fbItem).find('.feedback__viewmore').attr('data-site');
 
+		var h_linkout = "feedback-popup__linkout-";
 		$(fbPopup).find('.feedback-popup__date').text(date);
 		$(fbPopup).find('.feedback-popup__author').text(author);
 		$(fbPopup).find('.feedback-popup__text').text(text);
 		$(fbPopup).find('.feedback-popup__h-img img').attr('src', img);
+		$(fbPopup).find('.feedback-popup__linkout').attr('href', link);
+		$(fbPopup).find('.feedback-popup__linkout-ico').removeClass((h_linkout + "vk")+" "+(h_linkout + "fb")+" "+(h_linkout + "ig")).addClass(h_linkout + site);
 		showPopup($('.feedback-popup'));
 	});
 
@@ -122,6 +132,23 @@ jQuery(document).ready(function($){
 		$(this).next('.faq__answer').toggle();
 	});
 
+	// Show/hide docs on StrahovoiSluchai page
+	$('.action-desc__docs-btn').click(function(e) {
+		e.preventDefault();
+		if ($(this).hasClass('active')) {
+			$(this).removeClass('active');
+			$(this).next('.action-desc__docs').hide();
+		}
+		else {
+			$(this).addClass('active');
+			$(this).next('.action-desc__docs').show();
+		}
+	});
+
+
+	// Open first tab on page
+	$('.b-tabs__tab-btn').first().click().addClass('active');
+
 	// Dark bg behind popup
 	$("#fade_back").click(function(e){
 		hidePopup();
@@ -141,11 +168,11 @@ jQuery(document).ready(function($){
 	})
 
 	// Btns, calling popup
-	$(".show-form-quest").click(function(e){
+	$(".show-form-quest, .ask_req").click(function(e){
 		e.preventDefault();
 		showPopup($(".f-quest"));
 	});
-	$(".show-form-call").click(function(e){
+	$(".show-form-call, .callback_req").click(function(e){
 		e.preventDefault();
 		showPopup($(".f-call"));
 	});
@@ -262,7 +289,7 @@ function validateEmail(email) {
 }
 
 // Tabs
-function openBlock(evt, blockName) {
+function openBlock(btn, blockName) {
     var i, tabcontent, tablinks;
 
     tabcontent = document.getElementsByClassName("b-tabs__content");
@@ -276,5 +303,5 @@ function openBlock(evt, blockName) {
     }
 
     document.getElementById(blockName).style.display = "block";
-    evt.currentTarget.className += " active";
+    btn.className += " active";
 }

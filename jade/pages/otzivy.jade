@@ -4,9 +4,9 @@
 .soc-feedb
 	p.soc-feedb__title Оставляйте Ваши отзывы в наших аккаунтах в соцсетях
 	.soc-feedb__h-links
-		a(href="#").soc-feedb__link.soc-feedb__vk Оставить отзыв
-		a(href="#").soc-feedb__link.soc-feedb__fb Оставить отзыв
-		a(href="#").soc-feedb__link.soc-feedb__ig #safetyrestru_отзывы
+		a(href="#").soc-feedb__link.soc-feedb__vk #[span(class="soc-ico")] Оставить отзыв
+		a(href="#").soc-feedb__link.soc-feedb__fb #[span(class="soc-ico")] Оставить отзыв
+		a(href="#").soc-feedb__link.soc-feedb__ig #[span(class="soc-ico")] #safetyrestru_отзывы
 .empty-space_height_40
 h1 Отзывы
 .feedback
@@ -21,11 +21,11 @@ h1 Отзывы
 						p.feedback__text.show_popup #{item.text}
 						p.feedback__author.text-right #{item.name}
 						if (i == 0)
-							a(href="#{item.href}", class="feedback__linkout-vk").feedback__viewmore.right Посмотреть отзыв
+							a(href="#{item.href}", class="feedback__linkout-vk",data-site="vk").feedback__viewmore.right Посмотреть отзыв
 						else if (i == 1)
-							a(href="#{item.href}", class="feedback__linkout-fb").feedback__viewmore.right Посмотреть отзыв
+							a(href="#{item.href}", class="feedback__linkout-fb",data-site="fb").feedback__viewmore.right Посмотреть отзыв
 						else if (i == 2)
-							a(href="#{item.href}", class="feedback__linkout-ig").feedback__viewmore.right Посмотреть отзыв
+							a(href="#{item.href}", class="feedback__linkout-ig",data-site="ig").feedback__viewmore.right Посмотреть отзыв
 	a(data-rows-count="3").feedback__showmore.btn-centred.btn_color_void Показать ещё
 	.feedback-popup
 		.feedback-popup__h-img
@@ -36,5 +36,5 @@ h1 Отзывы
 			p.feedback-popup__text
 			.feedback-popup__h-linkout
 				span.feedback-popup__linkout-text Опубликовано в
-				span.feedback-popup__linkout-ico
-				a(href="").feedback-popup__linkout-link
+				span.feedback-popup__linkout.feedback-popup__linkout-ico
+				a(href="").feedback-popup__linkout.feedback-popup__linkout-link

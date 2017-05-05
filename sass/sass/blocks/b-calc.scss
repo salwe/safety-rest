@@ -109,6 +109,18 @@
 	}
 }
 
+.calc-main {
+	padding: 20px;
+	background: rgba(255,255,255,.7);
+	width: 370px;
+	height: 440px;
+	position: absolute;
+	z-index: 5;
+	right: 0;
+	top: 15px;
+	@extend .noselect;
+}
+
 
 
 
@@ -118,7 +130,7 @@
 	left: 0;
 	width: 100%;
 	height: 100%;
-	.row {
+	&>.row {
 		position: relative;
 		width: 100%;
 		height: 100%;

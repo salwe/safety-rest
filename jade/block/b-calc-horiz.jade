@@ -2,26 +2,43 @@
 	.row
 		.large-4.columns
 			label Куда поедете?
+			div
+				span.calc-horiz__example Например:
+				a(href="#").calc-horiz__example Испания
+				a(href="#").calc-horiz__example Шенген
+				a(href="#").calc-horiz__example Весь мир
+		.large-2.columns
+			.calc-horiz__h-lbl
+				label Отъезд
+		.large-2.columns
+			.calc-horiz__h-lbl
+				label Возвращение
+		.large-2.columns.end
+			label Количество путешественников
+	.row
+		.large-4.columns
 			.calc__h-country-inp
 				span
 				input(type="text",placeholder="Введите название страны").calc__country-inp
+		.large-2.columns
+			input(type="text",name="departureDate")
+		.large-2.columns
+			input(type="text",name="returnDate")
+		.large-2.columns
+			input(type="text")
+		.large-2.columns
+			.calc__submit-btn Узнать цену
+	.row
+		.large-2.columns
 			.calc__h-duration-cb
 				input#multyPolis(type="checkbox")
 				label(for="multyPolis") Полис на год
-			span.calc__duration-add-ico +
-			span.calc__duration-add-btn добавить страну
 		.large-2.columns
-			label Отъезд
-			input(type="text",name="departureDate")
-		.large-2.columns
-			label Возвращение
-			input(type="text",name="returnDate")
-		.large-2.columns
-			label Количество путешественников
-			input(type="text")
+			.float-right
+				span.calc__duration-add-ico +
+				span.calc__duration-add-btn добавить страну
+		.large-2.columns.large-offset-4.end
 			.calc__h-promo
-			span.calc__promo-btn Промокод
-			span.calc__promo-ico
-				.calc__promo-desc Промо-код дает право на скидку. Поле не обязательно для заполнения.
-		.large-2.columns
-			.calc__submit-btn Узнать цену
+				span.calc__promo-btn Промокод
+				span.calc__promo-ico
+					.calc__promo-desc Промо-код дает право на скидку. Поле не обязательно для заполнения.

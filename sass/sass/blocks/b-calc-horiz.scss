@@ -1,0 +1,30 @@
+.calc-horiz {
+	background: rgba(255,255,255,.9);
+	padding: 20px 20px 5px;
+	label {
+		line-height: 1.2;
+	}
+	&__h-lbl {
+		display: flex;
+		height: 38px;
+		label {
+			align-self: flex-end;
+		}
+	}
+	&__example {
+		@extend .align_middle;
+		font-size: 14px;
+		margin-right: 3px;
+	}
+	a#{&}__example {
+		color: $gray3;
+		text-decoration: underline;
+		&:hover {
+			text-decoration: none;
+		}
+	}
+	.calc__h-promo {
+		margin-top: 0;
+		font-size: 15px;
+	}
+}

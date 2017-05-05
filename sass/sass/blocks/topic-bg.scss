@@ -21,9 +21,14 @@
 }
 
 .topic-white {
-	.breadcrumb-navigation,
 	h1,
 	p {
 		color: #fff;
+	}
+	.breadcrumb-navigation {
+		color: #fff;
+		a {
+			color: #fff;
+		}
 	}
 }
