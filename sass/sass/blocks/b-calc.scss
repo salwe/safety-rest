@@ -30,6 +30,11 @@
 	&__country-inp {
 		padding-left: 35px;
 	}
+	&__date-inp {
+		background: #fff url('../images/redesign/calend.svg') no-repeat;
+		background-position: left 5px center;
+		padding-left: 30px;
+	}
 	&__h-duration-cb {
 		label {
 			font-size: 15px;
@@ -136,26 +141,8 @@
 		height: 100%;
 	}
 }
-#calculator {
-	width: 370px;
-	height: 440px;
-	background: #fff;
-	position: absolute;
-	z-index: 5;
-	right: 0;
-	top: 0;
-}
 
-// -----------
 
-.input-wrap {
-	position: relative;
-}
-.arrow-for-input {
-	top: 5px;
-	right: 0px;
-	border: none;
-}
 #overlay {
 	z-index: 4;
 }

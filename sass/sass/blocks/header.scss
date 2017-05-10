@@ -111,6 +111,9 @@ header {
 			margin: 10px auto;
 			text-align: center;
 			text-decoration: none;
+			&:hover {
+				background: #e4b600;
+			}
 		}
 	}
 	&__phone {

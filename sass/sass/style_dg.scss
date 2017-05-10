@@ -41,3 +41,23 @@ h3 {
 	right: 5%;
     cursor: pointer;
 }
+.ui-widget {
+	font-size: 0.9em;
+}
+
+@media screen and (max-width: 63.9375em) {
+	.idea {
+		height: auto;
+		background: #fff;
+	}
+	.blog-item__image-cover {
+		display: none;
+	}
+	.blog-item__info {
+		width: 100%;
+		float: none;
+	}
+	.assistance {
+		background-image: none;
+	}
+}

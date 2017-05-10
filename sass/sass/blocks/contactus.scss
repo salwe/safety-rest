@@ -15,6 +15,7 @@
 		line-height: 36px;
 		margin: 26px auto 0;
 		text-transform: uppercase;
+		text-decoration: none;
 		border-radius: 3px;
 		font-size: 13px;
 		text-align: center;
@@ -22,10 +23,27 @@
 		&-quest {
 			background: $yellow;
 			color: $gray3;
+			&:hover,
+			&:active {
+				background: #e4b600;
+				color: $gray3;
+			}
 		}
 		&-call {
 			background: $green;
 			color: #fff;
+			&:hover {
+				border-left: solid 2px #93b26c;
+				border-right: solid 2px #93b26c;
+				border-bottom: solid 2px #457a01;
+				border-radius: 5px;
+				box-sizing: border-box;
+			}
+			&:active {
+				background: #59aa29;
+				border-radius: 5px;
+				box-sizing: border-box;
+			}
 		}
 	}
 }

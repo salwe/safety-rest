@@ -25,21 +25,55 @@
 	&_border {
 		border-color: #d7d7d7;
 	}
+	&:hover {
+		border-left-color: #93b26c;
+		border-right-color: #93b26c;
+		border-bottom-color: #457a01;
+		border-radius: 5px;
+	}
+	&:active {
+		background: #59aa29;
+		border-color: #59aa29;
+	}
 }
 .btn_color_white {
 	background: transparent;
 	border-color: #fff;
 	color: #fff;
+	&:hover {
+		background: #fff;
+		border-color: #bcbcbc;
+		color: $green;
+	}
+	&:active {
+		background: #fff;
+		border-color: #bcbcbc;
+		color: #595959;
+	}
 }
 .btn_color_void {
 	background: transparent;
 	border-color: $green;
 	color: $green;
+	&:hover {
+		background: #59aa29;
+		border-color: #59aa29;
+		color: #fff;
+	}
+	&:active {
+		background: #59aa29;
+		border-color: #59aa29;
+		color: #fff;
+	}
 }
 .btn_color_yellow {
 	background: $yellow;
 	border-color: $yellow;
 	color: $gray3;
+	&:hover {
+		background: #e4b600;
+		border-color: #e4b600;
+	}
 }
 
 .align_middle {
