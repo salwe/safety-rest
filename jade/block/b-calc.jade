@@ -3,6 +3,11 @@
 		.large-12.columns
 			.calc__title Не забудьте купить страховку
 			label Куда поедете?
+			div
+				span.calc-horiz__example Например:
+				a(href="#").calc__example Испания
+				a(href="#").calc__example Шенген
+				a(href="#").calc__example Весь мир
 			.calc__h-country-inp
 				span
 				input(type="text",placeholder="Введите название страны").calc__country-inp
@@ -35,7 +40,7 @@
 				span.calc__promo-ico
 					.calc__promo-desc Промо-код дает право на скидку. Поле не обязательно для заполнения.
 		.large-6.columns
-			input(type="text",name="promocode")
+			input(type="text",name="promocode").calc__promo-inp
 	.row
 		.large-12.columns
 			label Мы работаем:

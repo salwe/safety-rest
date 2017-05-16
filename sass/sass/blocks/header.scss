@@ -111,8 +111,18 @@ header {
 			margin: 10px auto;
 			text-align: center;
 			text-decoration: none;
+			border: solid 2px #ffcc00;
+			box-sizing: border-box;
 			&:hover {
+				border-left-color: #f0c82a;
+				border-right-color: #f0c82a;
+				border-bottom-color: #e4b600;
+				border-radius: 5px;
+			}
+			&:active {
+				border-radius: 5px;
 				background: #e4b600;
+				border-color: #e4b600;
 			}
 		}
 	}
@@ -148,12 +158,17 @@ header {
 .search {
 	position: relative;
 	.call-btn {
-		background: url('../images/redesign/search.png') no-repeat;
 		height: 21px;
 		width: 22px;
+		.search-svg {
+			fill: #595959;
+		}
 		&:hover {
 			background-position-x: -22px;
 			cursor: pointer;
+			.search-svg {
+				fill: $green;
+			}
 		}
 	}
 	.form-wrap {

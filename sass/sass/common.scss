@@ -71,6 +71,11 @@
 	border-color: $yellow;
 	color: $gray3;
 	&:hover {
+		border-left-color: #f0c82a;
+		border-right-color: #f0c82a;
+		border-bottom-color: #e4b600;
+	}
+	&:active {
 		background: #e4b600;
 		border-color: #e4b600;
 	}

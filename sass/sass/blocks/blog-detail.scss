@@ -1,0 +1,22 @@
+.blog-detail {
+	&__anonse,
+	&__anonse p {
+		font-size: 21px;
+		line-height: 24px;
+	}
+}
+.blog-soc {
+	&__link {
+		color: #fff;
+		text-decoration: none;
+		font-size: 13px;
+		line-height: 26px;
+		padding: 0 10px 0 40px;
+		display: inline-block;
+		margin-right: 28px;
+		margin-bottom: 26px;
+	}
+	&__vk { background: #527498 url('../images/redesign/soc-vk-w.svg') no-repeat left 7px center; }
+	&__fb { background: #5475b5 url('../images/redesign/soc-fb-w.svg') no-repeat left 7px center; }
+	&__tw { background: #3ac5de url('../images/redesign/soc-tw-w.svg') no-repeat left 7px center; }
+}

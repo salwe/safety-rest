@@ -64,3 +64,24 @@
 		}
 	}
 }
+
+.count-slider {
+	margin: 0 45px;
+	&-arr {
+		position: absolute;
+		top: 40%;
+		background: url('../images/redesign/slick-arr-gr.png') no-repeat;
+		width: 43px;
+		height: 43px;
+		&:hover {
+			cursor: pointer;
+		}
+	}
+	&-prev {
+		left: -45px;
+	}
+	&-next {
+		right: -5px;
+		@include rotate(180deg);
+	}
+}

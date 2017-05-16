@@ -11,18 +11,6 @@
 			align-self: flex-end;
 		}
 	}
-	&__example {
-		@extend .align_middle;
-		font-size: 14px;
-		margin-right: 3px;
-	}
-	a#{&}__example {
-		color: $gray3;
-		text-decoration: underline;
-		&:hover {
-			text-decoration: none;
-		}
-	}
 	.calc__h-promo {
 		margin-top: 0;
 		font-size: 15px;

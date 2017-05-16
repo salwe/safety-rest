@@ -23,10 +23,16 @@
 		&-quest {
 			background: $yellow;
 			color: $gray3;
-			&:hover,
+			&:hover {
+				border-left: solid 2px #f0c82a;
+				border-right: solid 2px #f0c82a;
+				border-bottom: solid 2px #e4b600;
+				border-radius: 5px;
+				box-sizing: border-box;
+			}
 			&:active {
+				border-radius: 5px;
 				background: #e4b600;
-				color: $gray3;
 			}
 		}
 		&-call {

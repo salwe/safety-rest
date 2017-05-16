@@ -24,12 +24,17 @@
 		color: #fff;
 		margin-left: 40px;
 	}
+	.calc {
+		margin: 0 10px;
+	}
 }
 
 .count-slider {
 	&__item {
-		height: 160px;
+		height: 140px;
 		overflow: hidden;
+		width: 245px;
+		margin: 0 20px;
 	}
 
 }

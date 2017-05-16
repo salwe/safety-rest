@@ -4,9 +4,9 @@
 			label Куда поедете?
 			div
 				span.calc-horiz__example Например:
-				a(href="#").calc-horiz__example Испания
-				a(href="#").calc-horiz__example Шенген
-				a(href="#").calc-horiz__example Весь мир
+				a(href="#").calc__example Испания
+				a(href="#").calc__example Шенген
+				a(href="#").calc__example Весь мир
 		.large-2.columns
 			.calc-horiz__h-lbl
 				label Отъезд
@@ -37,8 +37,10 @@
 			.float-right
 				span.calc__duration-add-ico +
 				span.calc__duration-add-btn добавить страну
-		.large-2.columns.large-offset-4.end
+		.large-2.columns.large-offset-4
 			.calc__h-promo
 				span.calc__promo-btn Промокод
 				span.calc__promo-ico
 					.calc__promo-desc Промо-код дает право на скидку. Поле не обязательно для заполнения.
+		.large-2.columns.end
+			input(type="text",name="promocode").calc__promo-inp

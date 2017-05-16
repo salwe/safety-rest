@@ -41,11 +41,6 @@
 			display: block;
 		}
 	}
-
-	&.about {
-		border-bottom: solid 1px #bababa;
-		margin-bottom: 20px;
-	}
 }
 
 
@@ -64,8 +59,25 @@
 	.b-tabs__tab-btn.active {
 		background: #fff;
 	}
+	.b-tabs__content {
+		padding: 0;
+	}
+	.b-tabs__head.row {
+		margin: 0 -5px;
+	}
 }
 
 .contacts {
 	.b-tabs__tab-btn { padding: 14px 0; width: 100%; }
+}
+
+.about {
+	&.b-tabs {
+		border-bottom: solid 1px #bababa;
+		margin-bottom: 20px;
+	}
+	&__tab {
+		width: 12%;
+		@extend .align_middle;
+	}
 }

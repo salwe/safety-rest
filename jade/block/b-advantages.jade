@@ -1,6 +1,7 @@
-- var items = ["Покупайте онлайн круглосуточно","Универсальные страховые полисы","Принимаются всеми Консульствами","Выгода до 30%","Бесплатное лечение по страховке","Выгода до 30%"]
+- var items = ["Покупайте онлайн круглосуточно","Универсальные страховые полисы","Принимаются всеми Консульствами","Выгода до 30%","Бесплатное лечение по страховке","37700 клиник по всему миру"]
 
 each item,i in items
 	.large-2.columns.b-img-center
-		img(src='/bitrix/templates/corp_services_blue/images/redesign/prem#{i}.png')
+		.advantages__h-img
+			img(src='/bitrix/templates/corp_services_blue/images/redesign/prem#{i}.svg')
 		p #{item}
