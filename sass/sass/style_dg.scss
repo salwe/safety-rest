@@ -31,6 +31,10 @@ h3 {
 	background: #f3f3f3;
 	@include box-shadow(inset 0 2px 8px -5px rgba(0, 0, 0, 0.2));
 }
+.add-mg {
+	margin-right: -0.9375rem;
+	margin-left: -0.9375rem;
+}
 #to-top {
 	display: none;
 	width: 85px;

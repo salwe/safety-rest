@@ -136,6 +136,10 @@ header {
 			border-color: #f5f5f5;
 		}
 	}
+	&-btns {
+		float: right;
+		margin-top: 7px;
+	}
 }
 
 .make-call {
@@ -147,56 +151,61 @@ header {
 		text-decoration: none;
 	}
 }
-.login {
-	background: url('../images/redesign/login.png') no-repeat;
-	height: 21px;
-	width: 26px;
-	&:hover {
-		background-position-x: -26px;
-	}
-}
-.search {
-	position: relative;
-	.call-btn {
+header {
+	.login {
+		float: right;
+		background: url('../images/redesign/login.png') no-repeat;
 		height: 21px;
-		width: 22px;
-		.search-svg {
-			fill: #595959;
-		}
+		width: 26px;
 		&:hover {
-			background-position-x: -22px;
-			cursor: pointer;
-			.search-svg {
-				fill: $green;
-			}
+			background-position-x: -26px;
 		}
 	}
-	.form-wrap {
-		background: #fff;
-		border: solid 1px #ccc;
-		border-radius: 5px;
-		display: none;
-		padding: 2px;
-		position: absolute;
-		right: 0;
-		top: 25px;
-		width: 210px;
-		z-index: 10;
-		form {
-			border: solid 1px #d7d7d7;
-			border-radius: 3px;
-			.input {
-				@include pleceholder-color(#bababa);
-				border: none;
-				height: 30px;
-				padding: 0 10px;
-				margin: 0;
+	.search {
+		float: right;
+		margin-left: 5px;
+		position: relative;
+		.call-btn {
+			height: 21px;
+			width: 22px;
+			.search-svg {
+				fill: #595959;
 			}
-			.submit {
-				display: none;
-				position: absolute;
-				right: 0;
-				top: 2px;
+			&:hover {
+				background-position-x: -22px;
+				cursor: pointer;
+				.search-svg {
+					fill: $green;
+				}
+			}
+		}
+		.form-wrap {
+			background: #fff;
+			border: solid 1px #ccc;
+			border-radius: 5px;
+			display: none;
+			padding: 2px;
+			position: absolute;
+			right: 0;
+			top: 25px;
+			width: 210px;
+			z-index: 10;
+			form {
+				border: solid 1px #d7d7d7;
+				border-radius: 3px;
+				.input {
+					@include pleceholder-color(#bababa);
+					border: none;
+					height: 30px;
+					padding: 0 10px;
+					margin: 0;
+				}
+				.submit {
+					display: none;
+					position: absolute;
+					right: 0;
+					top: 2px;
+				}
 			}
 		}
 	}

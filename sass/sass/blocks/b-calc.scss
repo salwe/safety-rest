@@ -52,7 +52,7 @@
 		}
 	}
 	&__duration-add-ico {
-		display: inline-block;
+		@extend .align_middle;
 		width: 16px;
 		height: 16px;
 		color: #fff;
@@ -89,6 +89,7 @@
 	&__promo {
 		&-btn {
 			text-decoration: underline;
+			vertical-align: middle;
 			&:hover {
 				text-decoration: none;
 				cursor: pointer;
@@ -127,6 +128,44 @@
 			padding: 4px 8px;
 			width: 250px;
 		}
+	}
+	&__peoples { position: relative; }
+	&__h-peoples {
+		display: none;
+		position: absolute;
+		top: 36px;
+		z-index: 10001;
+		background: #fff;
+		border: solid 1px #ccc;
+		border-radius: 3px;
+		width: 240px;
+		padding: 10px 5px 0;
+	}
+	&__people {
+		label {
+			font-size: 14px;
+			margin-left: 0;
+			margin-right: 3px;
+		}
+	}
+	&__people-cb {
+		margin-bottom: 0;
+		vertical-align: middle;
+	}
+	&__people-age {
+		display: inline-block;
+		background: none;
+		width: 70px;
+		height: 20px;
+		padding: 0;
+		margin-bottom: 0;
+		font-size: 14px;
+	}
+	&__people-add {
+		font-size: 14px;
+		color: $green;
+		text-decoration: none;
+		font-weight: bold;
 	}
 	&__submit-btn {
 		@extend .btn;
@@ -172,6 +211,6 @@
 }
 
 
-#overlay {
-	z-index: 4;
-}
+// #overlay {
+// 	z-index: 4;
+// }

@@ -29,8 +29,17 @@
 	.row
 		.large-12.columns
 			label Количество путешественников
-		.large-6.columns
-			input(type="text")
+		.large-6.columns.calc__peoples
+			input(type="text").calc__peoples-count
+			.calc__h-peoples
+				each _, j in Array(3)
+					.calc__people
+						input(type="checkbox").calc__people-cb
+						label #{j+1}#[sup й] путешественник
+						select(name="age").calc__people-age
+							option(value="20") 20 лет
+							option(value="30") 30 лет
+							option(value="40") 40 лет
 		.large-6.columns
 			.calc__submit-btn Узнать цену
 	.row
